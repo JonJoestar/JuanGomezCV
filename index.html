@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="estilos.css">
+    <title>JG Dedarrollo Web</title>
+</head>
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/JG/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mi</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--SECCION DEL MENU RESPONSIVO-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--ICONOS REDES-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/gomezjuan1/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/JonJoestar"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Juan Gomez</span>, Desarrollador Web</h2>
+                <p class="descripcion">Soy Juan Gomez Desarrollador Web, aqui encontrara informacion sobre mi y sobre algunos proyectos que he realizado a lo largo de mi tiempo siendo desarrollador, no tengo mucha experiencia desarrollando, pero sigo aprendiendo y creciendo dia con dia en busca de una oportunidad que me ofresca crecer y desarrollar mis habilidades</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBREMI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Juan Gomez</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy Juan Gomez, Desarrollador Web. Estudie la carrera de Desarrollo y Gestion de Software en la Universidada Tecnologica de Tamaulipas Norte (UTTN), 
+            tengo poco tiempo desarrollando ya que no he tenido la oportunidad de ejercer mis conocimientos en el hambito laboral, aun asi practico para poner en practica mis habilidades.
+            Tengo experiencia en multiples areas ademas del desarrollo, he trabajado a la mano de ingenieros en areas de IT, ademas de tener experiencia en el area de SMT y soporte en la misma.
+            Excelente capacidad para hablar y de asistencia tecnica, ademas de ser una persona motivada y disciplinada.</p>
+            <a href="Juan Gomez.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Diseño</li>
+                    <li>Base de Datos</li>
+                </ul>
+                <p>El desarrollo web full-stack incluye tanto el desarrollo back-end como el front-end. Al planificar, construir y alojar el sitio web. Aplicaciones web sencillas y con buen diseño</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                <h4>Control de Calidad y Pruebas</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Control</li>
+                    <li>Pruebas</li>
+                    <li>Calidad</li>
+                </ul>
+                <p>Pruebas y garantía de calidad, se utilizar el control de calidad para asegurarse de que la aplicación que se esta desarrollando funciona correctamente.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-house-laptop"></i></span>
+                <h4>Soporte y Mentenimiento de Computo y Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Soporte</li>
+                    <li>Mantenimiento</li>
+                </ul>
+                <p>Los servicios de soporte y mantenimiento web le ayudarán a mantener su sitio o aplicación web en funcionamiento una vez que haya terminado de construirlo. 
+                Ademas del servicio de soporte de computo ayudara a mentener sus equipos en buen estado.</p>
+            </div>
+        </div>
+        <!-- <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Soporte y Mantenimiento Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit aut perspiciatis impedit nulla voluptatem, facilis odio dicta! Vitae nobis, et provident iste reprehenderit ab blanditiis saepe rerum non aut.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit aut perspiciatis impedit nulla voluptatem, facilis odio dicta! Vitae nobis, et provident iste reprehenderit ab blanditiis saepe rerum non aut.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sit aut perspiciatis impedit nulla voluptatem, facilis odio dicta! Vitae nobis, et provident iste reprehenderit ab blanditiis saepe rerum non aut.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class=""></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class=""></div>
+            </div>
+        </div>
+
+        <!-- <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span></p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class=""></div>
+            </div>
+        </div> -->
+    </div>
+    
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto1.jpg" alt="">
+                    <div class="info">
+                        <h4>Desarrollo de portafolio con Javascript, CSS & HTML</h4>
+                        <p>Portafolio Online</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto2.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseno Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto3.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseno Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacta Ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/63eea93a0f15ad6f79d8a2469b67f70d" method="POST">
+                <div class="fila mitad">
+                    <input type="text" name="name" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" name="email" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="tema" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu Mensaje ..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="hidden" name="_next" value="https://localhost/CvOnline/">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/gomezjuan1/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/JonJoestar"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
